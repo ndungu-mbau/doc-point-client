@@ -8,26 +8,26 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
-  <div class="page-header section-dark" style={{backgroundImage: 'url("%PUBLIC_URL%/assets/img/antoine-barres.jpg")'}}>
+  <div class="page-header section-dark" style={{backgroundImage: 'url("/assets/img/antoine-barres.jpg")'}}>
     <div class="filter"></div>
     <div class="content-center">
       <div class="container">
         <div class="title-br/and">
           <h1 class="presentation-title">Paper Kit 2</h1>
           <div class="fog-low">
-            <img src="%PUBLIC_URL%/assets/img/fog-low.png" alt=""/>
+            <img src="/assets/img/fog-low.png" alt=""/>
           </div>
           <div class="fog-low right">
-            <img src="%PUBLIC_URL%/assets/img/fog-low.png" alt=""/>
+            <img src="/assets/img/fog-low.png" alt=""/>
           </div>
         </div>
         <h2 class="presentation-subtitle text-center">Make your mark with a Free Bootstrap 4 UI Kit! </h2>
       </div>
     </div>
-    <div class="moving-clouds" style={{backgroundImage: "url('%PUBLIC_URL%/assets/img/clouds.png');"}}></div>
+    <div class="moving-clouds" style={{backgroundImage: "url('/assets/img/clouds.png');"}}></div>
     <h6 class="category category-absolute">Designed and coded by
       <a href="https://www.creative-tim.com" target="_blank">
-        <img src="%PUBLIC_URL%/assets/img/creative-tim-white-slim2.png" class="creative-tim-logo"/>
+        <img src="/assets/img/creative-tim-white-slim2.png" class="creative-tim-logo"/>
       </a>
     </h6>
   </div>
@@ -315,7 +315,7 @@ function App() {
         </div>
       </div>
       <div id="navbar">
-        <div class="navigation-example" style={{backgroundImage: "url('%PUBLIC_URL%/assets/img/ilya-yakover.jpg');"}}>
+        <div class="navigation-example" style={{backgroundImage: "url('/assets/img/ilya-yakover.jpg');"}}>
           <nav class="navbar navbar-expand-lg bg-primary">
             <div class="container">
               <a class="navbar-br/and" href="#">Primary Color</a>
@@ -758,11 +758,11 @@ function App() {
           <div class="row">
             <div class="col-sm-6 col-md-3">
               <h4 class="images-title">Rounded Image</h4>
-              <img src="%PUBLIC_URL%/assets/img/uriel-soberanes.jpg" class="img-rounded img-responsive"
+              <img src="/assets/img/uriel-soberanes.jpg" class="img-rounded img-responsive"
                 alt="Rounded Image"/>
               <div class="img-details">
                 <div class="author">
-                  <img src="%PUBLIC_URL%/assets/img/faces/joe-gardner-2.jpg" alt="Circle Image"
+                  <img src="/assets/img/faces/joe-gardner-2.jpg" alt="Circle Image"
                     class="img-circle img-no-padding img-responsive"/>
                 </div>
                 <p>Sonia Green </p>
@@ -770,13 +770,13 @@ function App() {
             </div>
             <div class="col-sm-3 col-md-2 mr-auto ml-auto">
               <h4 class="images-title">Circle Image</h4>
-              <img src="%PUBLIC_URL%/assets/img/faces/kaci-baum-2.jpg" class="img-circle img-no-padding img-responsive"
+              <img src="/assets/img/faces/kaci-baum-2.jpg" class="img-circle img-no-padding img-responsive"
                 alt="Rounded Image"/>
               <p class="text-center">br/igitte Bardot</p>
             </div>
             <div class="col-sm-3 col-md-2 mr-auto">
               <h4 class="images-title">Thumbnail</h4>
-              <img src="%PUBLIC_URL%/assets/img/faces/erik-lucatero-2.jpg" class="img-thumbnail img-responsive"
+              <img src="/assets/img/faces/erik-lucatero-2.jpg" class="img-thumbnail img-responsive"
                 alt="Rounded Image"/>
               <p class="text-center">John Keynes</p>
             </div>
@@ -898,20 +898,20 @@ function App() {
                 </ol>
                 <div class="carousel-inner" role="listbox">
                   <div class="carousel-item active">
-                    <img class="d-block img-fluid" src="%PUBLIC_URL%/assets/img/soroush-karimi.jpg" alt="First slide"/>
+                    <img class="d-block img-fluid" src="/assets/img/soroush-karimi.jpg" alt="First slide"/>
                     <div class="carousel-caption d-none d-md-block">
                       <p>Somewhere</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block img-fluid" src="%PUBLIC_URL%/assets/img/federico-beccari.jpg"
+                    <img class="d-block img-fluid" src="/assets/img/federico-beccari.jpg"
                       alt="Second slide"/>
                     <div class="carousel-caption d-none d-md-block">
                       <p>Somewhere else</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block img-fluid" src="%PUBLIC_URL%/assets/img/joshua-stannard.jpg" alt="Third slide"/>
+                    <img class="d-block img-fluid" src="/assets/img/joshua-stannard.jpg" alt="Third slide"/>
                     <div class="carousel-caption d-none d-md-block">
                       <p>Here it is</p>
                     </div>
@@ -984,7 +984,7 @@ function App() {
       </div>
     </div>
     <div class="section section-image section-login"
-      style={{backgroundImage: "url('%PUBLIC_URL%/assets/img/login-image.jpg');"}}>
+      style={{backgroundImage: "url('/assets/img/login-image.jpg');"}}>
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6 mx-auto">
@@ -1027,7 +1027,7 @@ function App() {
               </div>
             </div>
             <div class="col text-center">
-              <a href="%PUBLIC_URL%/examples/register-page.html" class="btn btn-outline-neutral btn-round btn-lg"
+              <a href="/examples/register-page.html" class="btn btn-outline-neutral btn-round btn-lg"
                 target="_blank">View Register Page</a>
             </div>
           </div>
@@ -1039,18 +1039,18 @@ function App() {
         <div class="row example-page">
           <div class="col-md-6 text-center">
             <a href="examples/landing.html" target="_blank">
-              <img src="%PUBLIC_URL%/assets/img/examples/landing-page.png" alt="Rounded Image"
+              <img src="/assets/img/examples/landing-page.png" alt="Rounded Image"
                 class="img-rounded img-responsive" style={{width: "100%"}}/>
-              <a href="%PUBLIC_URL%/examples/landing-page.html" class="btn btn-outline-neutral btn-round"
+              <a href="/examples/landing-page.html" class="btn btn-outline-neutral btn-round"
                 target="_blank">Landing
                 Page</a>
             </a>
           </div>
           <div class="col-md-6 text-center">
             <a href="examples/profile.html" target="_blank">
-              <img src="%PUBLIC_URL%/assets/img/examples/profile-page.png" alt="Rounded Image"
+              <img src="/assets/img/examples/profile-page.png" alt="Rounded Image"
                 class="img-rounded img-responsive" style={{width: "100%"}}/>
-              <a href="%PUBLIC_URL%/examples/profile-page.html" class="btn btn-outline-neutral btn-round"
+              <a href="/examples/profile-page.html" class="btn btn-outline-neutral btn-round"
                 target="_blank">Profile
                 Page</a>
             </a>
