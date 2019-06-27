@@ -13,9 +13,7 @@ export default class Home extends Component {
       name: '',
       email: '',
       password: '',
-      data: {
-        ok: true,
-      },
+      ok: null,
     }
     this.onClickHandler = this.onClickHandler.bind(this)
   }
@@ -24,30 +22,22 @@ export default class Home extends Component {
     e.persist()
 
     const { name, email, password } = this.state
-    console.log(this.state)
 
-    const url = `${apiUrl}/patient`
+    const {
+      data: { ok, message, token },
+    } = await axios.post(`${apiUrl}/patient`, {
+      name: name,
+      email: email,
+      password: password,
+    })
 
-    console.log(url)
+    if (ok) {
+      this.setState({ ok, message })
+      localStorage.setItem('token', token)
 
-    const res = await axios.post(
-      url,
-      {
-        name: name,
-        email: email,
-        password: password,
-      },
-      {
-        withCredentials: true,
-      },
-    )
-
-    console.log(res)
-
-    if (res.data.ok) {
       this.props.history.push('/hospitals')
     } else {
-      this.setState({ data: res.data })
+      this.setState({ ok, message })
     }
   }
 
@@ -61,10 +51,12 @@ export default class Home extends Component {
   }
 
   render() {
-    const { data } = this.state
+    const { ok, message } = this.state
+
+    console.log(ok !== null && !ok)
     return (
       <>
-        {!data.ok && <Alert message={data.message} />}
+        {ok !== null && !ok && <Alert type="danger" message={message} />}
         <div
           className="page-header section-dark"
           style={{ backgroundImage: 'url("/assets/img/At_the_hospital@2x.png")' }}

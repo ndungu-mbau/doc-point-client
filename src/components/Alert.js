@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default ({ message }) => {
+export default ({ message, type }) => {
   return (
     <div className="d-flex justify-content-center">
       <div
-        className="alert alert-danger alert-with-icon"
+        className={`alert alert-${type} alert-with-icon`}
         data-notify="container"
         style={{ marginTop: '100px', zIndex: 100, position: 'absolute' }}
       >

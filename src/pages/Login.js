@@ -37,6 +37,7 @@ export default class Login extends Component {
     console.log(res)
 
     if (res.data.ok) {
+      localStorage.setItem('token', res.data.token)
       this.props.history.push('/hospitals')
     } else {
       this.setState({ data: res.data })
