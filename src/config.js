@@ -1,8 +1,8 @@
 export default {
   production: {
-    apiUrl: "http://api:4000"
+    apiUrl: 'http://api:4000',
   },
-  developent:{
-    apiUrl : "http://localhost:4000"
-  }
+  development: {
+    apiUrl: 'http://localhost:4000',
+  },
 }
